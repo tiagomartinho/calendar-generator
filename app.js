@@ -24,5 +24,6 @@ ics.createEvent(event, (error, value) => {
   if (error) {
     console.log(error);
   }
+  console.log(value);
   fs.writeFileSync(`${__dirname}/event.ics`, value);
 });
